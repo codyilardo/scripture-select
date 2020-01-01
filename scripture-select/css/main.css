@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+:root {
+  --mainColor: #eee;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  width: 30em;
+}
+
+a {
+  background:
+     linear-gradient(
+       to bottom, var(--mainColor) 0%,
+       var(--mainColor) 100%
+     );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+  color: #000;
+  text-decoration: none;
+  transition: background-size .2s;
+}
+
+a:hover {
+  background-size: 4px 50px;
+  text-decoration: none;
+}
+
+.main-header {
+  font-weight: 600;
+  font-size: 220%;
+}
+.success {
+  font-size: 160%;
+}
+.redir_err {
+  font-size: 120%;
+}
+.notext-err {
+  font-size: 170%;
+}
+.tiny {
+  font-size: 80%;
+}
+.tinyfoot {
+  font-size: 80%;
+  font-style: italic;
+}

@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "Scripture Select",
+    "description": "Scripture Select is a simple tool to help you make connections with the scriptures as you visit different webpages.",
+    "version": "1.1",
+    "icons": {
+        "16": "favicon.ico",
+        "48": "favicon.png",
+        "128": "favicon.ico"
+    },
+
+    "permissions": [
+        "activeTab",
+        "https://api.esv.org/*/",
+        "http://fonts.googleapis.com/",
+        "https://fonts.googleapis.com/",
+        "https://www.esv.org/*/",
+        "https://www.google.com/*/"
+    ],
+    "browser_action": {
+        "default_icon": "favicon.png",
+        "default_popup": "popup.html"
+    }
+}
