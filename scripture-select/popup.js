@@ -76,6 +76,8 @@ chrome.tabs.executeScript( {
   } else {
 
     var query_raw = query_raw_raw.replace(/%20/g, " ");
+    query_raw.replace(/%22/g, " ");
+    query_raw.replace(/%2F/g, "/");
     var query = query_raw.trim()
 
     loadResponse(query);
