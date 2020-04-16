@@ -1,6 +1,7 @@
 # Scripture Select
 
-Scripture Select is a simple tool to help you make connections with the scriptures as you visit different webpages.
+Scripture Select is a simple tool to help you make connections with the scriptures as you visit different webpages. 
+Just select the text you read on a webpage (a blog, new site, social media, anywhere!) and click the extension icon to find occurences of that selection in the Scriptures. 
 
 ## Chrome Extension
 
