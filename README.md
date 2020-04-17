@@ -7,6 +7,9 @@ Just select the text you read on a webpage (a blog, new site, social media, anyw
 
 Use the [chrome extension store](https://chrome.google.com/webstore/detail/scripture-select/ldihccpdmgfhbebaioglilldppebibne?hl=en) to install Scripture Select.
 
+## Firefox Extension
+
+In Progress.
 ## Usage
 
 As you browse, simply simply select plain text (words or phrases) with your cursor, and click the extension
