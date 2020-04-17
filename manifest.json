@@ -4,9 +4,9 @@
     "description": "Scripture Select is a simple tool to help you make connections with the scriptures as you visit different webpages.",
     "version": "1.2",
     "icons": {
-        "16": "favicon.ico",
-        "48": "favicon.png",
-        "128": "favicon.ico"
+        "16": "icons/favicon.ico",
+        "48": "icons/favicon.png",
+        "128": "icons/favicon.ico"
     },
 
     "permissions": [

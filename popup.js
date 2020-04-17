@@ -84,10 +84,5 @@ chrome.tabs.executeScript( {
 
   }
 
-
-  // document.getElementById('resultant').innerHTML = results;
-
-  // document.querySelector('iframe').src =
-  //   'http://www.zdic.net/hans/' + query
 }
 );
