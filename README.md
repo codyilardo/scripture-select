@@ -5,17 +5,21 @@ Just select the text you read on a webpage (a blog, new site, social media, anyw
 
 ## Chrome Extension
 
-Use the [chrome extension store](https://chrome.google.com/webstore/detail/scripture-select/ldihccpdmgfhbebaioglilldppebibne?hl=en) to install Scripture Select.
+Use the [Chrome extension store](https://chrome.google.com/webstore/detail/scripture-select/ldihccpdmgfhbebaioglilldppebibne?hl=en) to install Scripture Select.
 
 ## Firefox Extension
 
-In Progress.
+Use the [Firefox Add-ons store](https://addons.mozilla.org/en-US/firefox/addon/scripture-select/) to install Scripture Select
+
 ## Usage
 
 As you browse, simply simply select plain text (words or phrases) with your cursor, and click the extension
 icon, and you will be shown every occurance of that text in the Bible, English Standard Version. Thank you, and may God
 give His blessing to the reading of His word.
 
+## Contributing
+
+If you are interested in this tool, I would love to have your help making it better. Let me know if you want to contribute.
 
 ## Uses external API
 
