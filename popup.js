@@ -1,5 +1,6 @@
 function loadResponse(query) {
-  $.ajax({
+
+  $.ajax( {
     type: "GET",
     dataType: "json",
     headers: {
@@ -10,6 +11,7 @@ function loadResponse(query) {
       "q": query,
       "page-size":100
     },
+    // remove this success one? done() handles it
     success: function(data) {
       console.log("success");
     },
@@ -18,7 +20,7 @@ function loadResponse(query) {
     }
   }).done(function(data) {
     console.log(JSON.stringify(data));
-    createHTML(query,data);
+    createHTML(query, data);
   });
 }
 
@@ -32,6 +34,7 @@ function createHTML(query,json) {
 
   var output = document.getElementById('output_stream');
 
+  // if too many results
   if (json["total_pages"]>1) {
     var redir_link = document.createElement("p");
     redir_link.classList.add("redir_err");
@@ -45,7 +48,6 @@ function createHTML(query,json) {
     for (var i = 0; i < json_data.length; i++) {
 
       var obj = json_data[i];
-
       var obj_ref = document.createElement("h3");
       obj_ref.innerHTML = "<a href='https://www.esv.org/" + obj["reference"] + "' target='_blank'>"+obj["reference"]+"</a>";
       var obj_con = document.createElement("p");
@@ -75,13 +77,15 @@ chrome.tabs.executeScript( {
 
   } else {
 
+    // next three lines not needed? possibly
     var query_raw = query_raw_raw.replace(/%20/g, " ");
     query_raw.replace(/%22/g, " ");
     query_raw.replace(/%2F/g, "/");
     var query = decodeURIComponent(query_raw.trim())
 
     loadResponse(query);
-
+    // have load response resolve to a variable
+    // render the variable here with create html, rather than having loadResponse call createHTML
   }
 
 }
