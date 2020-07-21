@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "Scripture Select",
     "description": "Scripture Select is a simple tool to help you make connections with the scriptures as you visit different webpages.",
-    "version": "1.3.3",
+    "version": "1.3.4",
     "icons": {
         "16": "icons/favicon.ico",
         "48": "icons/favicon.png",

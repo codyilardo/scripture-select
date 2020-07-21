@@ -22,9 +22,13 @@ function loadResponse(query) {
 
 function createHTML(query,json) {
 
+    // Sanitize query for display
+    var temp = document.createElement('div');
+    temp.textContent = query;
+    query = temp.innerHTML;
+
     var num_results = document.createElement("h2");
-    num_results.classList.add("success");
-    num_results.classList.add("text-success");
+    num_results.classList.add("success", "text-success");
     num_results.innerHTML = json["total_results"] + " results for " + '"' + query + '"';
     jumbo.append(num_results);
 
@@ -33,8 +37,7 @@ function createHTML(query,json) {
     // if too many results
     if (json["total_pages"]>1) {
         var redir_link = document.createElement("p");
-        redir_link.classList.add("redir_err");
-        redir_link.classList.add("text-danger");
+        redir_link.classList.add("redir_err","text-danger");
         redir_link.innerHTML = "Too many results for query. Click <a href=https://www.google.com/search?q=" + query + "+in+the+bible target='_blank'>here</a> for more."
         output.append(redir_link);
 
@@ -61,13 +64,12 @@ function createHTML(query,json) {
 chrome.tabs.executeScript( {
     code: "window.getSelection().toString();"},
     function(selection) {
-        var query_raw_raw = encodeURIComponent(selection[0] || '汉典');
+        var query_raw_raw = encodeURIComponent(selection[0] || 'during');
         var jumbo = document.getElementById('jumbo');
         console.log(selection);
         if (selection[0]=="") {
             var no_selection = document.createElement("h2");
-            no_selection.classList.add("text-danger");
-            no_selection.classList.add("notext-err");
+            no_selection.classList.add("text-danger", "notext-err");
             no_selection.innerHTML = "No text selected";
             jumbo.append(no_selection);
         } else {
