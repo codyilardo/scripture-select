@@ -5,8 +5,10 @@
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  width: 30em;
+  width: 40em;
+  padding: 2em
 }
+
 
 a {
   background:
@@ -41,9 +43,9 @@ a:hover {
   font-size: 170%;
 }
 .tiny {
-  font-size: 80%;
+  font-size: 95%;
 }
 .tinyfoot {
-  font-size: 80%;
+  font-size: 90%;
   font-style: italic;
 }

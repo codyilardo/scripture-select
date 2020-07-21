@@ -13,9 +13,10 @@
         "activeTab",
         "https://api.esv.org/*/",
         "http://fonts.googleapis.com/",
-        "https://fonts.googleapis.com/",
+        "https://fonts.googleapis.com/"
 
     ],
+
     "browser_action": {
         "default_icon": "icons/favicon.png",
         "default_popup": "popup.html"
